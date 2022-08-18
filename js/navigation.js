@@ -1,5 +1,6 @@
 import Adapt from 'core/js/adapt';
-import NavigationView from 'core/js/views/navigationView';
+import NavigationView from './NavigationView';
+import Backbone from 'Backbone';
 
 class NavigationController extends Backbone.Controller {
 
@@ -9,13 +10,11 @@ class NavigationController extends Backbone.Controller {
 
   addNavigationBar() {
     const adaptConfig = Adapt.course.get('_navigation');
-
     if (adaptConfig?._isDefaultNavigationDisabled) {
       Adapt.trigger('navigation:initialize');
       return;
     }
-
-    Adapt.navigation = new NavigationView();// This should be triggered after 'app:dataReady' as plugins might want to manipulate the navigation
+    Adapt.navigation = new NavigationView(); // This should be triggered after 'app:dataReady' as plugins might want to manipulate the navigation
   }
 
 }

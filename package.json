@@ -11,6 +11,16 @@
     "adapt-plugin",
     "adapt-extension"
   ],
+  "adapt_framework": {
+    "compilationMap": {
+      "core/js/views/navigationView": "adapt-contrib-drawer/js/NavigationView",
+      "core/js/navigation": "adapt-contrib-drawer/js/navigation"
+    }
+  },
+  "displayName": "Navigation",
+  "extension": "navigation",
+  "targetAttribute": "_navigation",
+  "main": "/js/navigation.js",
   "license": "GPL-3.0",
   "bugs": "https://github.com/adaptlearning/adapt-contrib-navigation/issues",
   "private": true,
