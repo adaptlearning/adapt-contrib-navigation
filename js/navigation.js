@@ -1,6 +1,6 @@
 import Adapt from 'core/js/adapt';
 import NavigationView from './NavigationView';
-import Backbone from 'Backbone';
+import Backbone from 'backbone';
 
 class NavigationController extends Backbone.Controller {
 

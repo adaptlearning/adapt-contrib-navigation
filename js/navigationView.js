@@ -3,6 +3,10 @@ import a11y from 'core/js/a11y';
 import location from 'core/js/location';
 import router from 'core/js/router';
 import startController from 'core/js/startController';
+import Backbone from 'backbone';
+import Handlebars from 'handlebars';
+import $ from 'jquery';
+import _ from 'underscore';
 
 class NavigationView extends Backbone.View {
 
